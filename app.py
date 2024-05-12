@@ -13,11 +13,11 @@ st.set_page_config(page_title="Health Assistant",
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # ทำการใช้ pickle.load ที่ในโค้ดipynb เราแปลงให้มันเป็นในรูปแบบบิต)serializing แต่มาตอนนี้เราต้อง แปลงกลับมาเป็นโครงสร้างpython object(de-serializing) เก็บในตัวแปร diabetes_model 
-diabetes_model = pickle.load(open(f'{working_dir}/saved_models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open(f'{working_dir}/saved_models/heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/parkinsons_model.sav', 'rb'))
 
 # สร้างตัวนำทาง Navigator โดยใช้คำสั่ง st.sidebar
 with st.sidebar:
